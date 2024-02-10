@@ -11,6 +11,8 @@
 		DCA7CE722B77A9380053C23C /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA7CE672B77A9380053C23C /* Networking.framework */; };
 		DCA7CE772B77A9380053C23C /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA7CE762B77A9380053C23C /* NetworkingTests.swift */; };
 		DCA7CE782B77A9380053C23C /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = DCA7CE6A2B77A9380053C23C /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCA7CE822B77A9DD0053C23C /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA7CE812B77A9DD0053C23C /* NetworkServices.swift */; };
+		DCA7CE842B77A9F90053C23C /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA7CE832B77A9F90053C23C /* ApiError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		DCA7CE6B2B77A9380053C23C /* Networking.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Networking.docc; sourceTree = "<group>"; };
 		DCA7CE712B77A9380053C23C /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA7CE762B77A9380053C23C /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		DCA7CE812B77A9DD0053C23C /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		DCA7CE832B77A9F90053C23C /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				DCA7CE6A2B77A9380053C23C /* Networking.h */,
 				DCA7CE6B2B77A9380053C23C /* Networking.docc */,
+				DCA7CE812B77A9DD0053C23C /* NetworkServices.swift */,
+				DCA7CE832B77A9F90053C23C /* ApiError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -194,7 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA7CE822B77A9DD0053C23C /* NetworkServices.swift in Sources */,
 				DCA7CE6C2B77A9380053C23C /* Networking.docc in Sources */,
+				DCA7CE842B77A9F90053C23C /* ApiError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +364,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,6 +396,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -407,6 +417,7 @@
 		DCA7CE7F2B77A9380053C23C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LK82N6733G;
@@ -423,6 +434,7 @@
 		DCA7CE802B77A9380053C23C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LK82N6733G;
